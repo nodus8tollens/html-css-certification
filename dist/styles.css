@@ -11,4 +11,18 @@
   margin: auto;
 }
 
+body {
+  background-color: teal;
+}
+@media (max-width: 1024px) {
+  body {
+    background-color: tomato;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: white;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

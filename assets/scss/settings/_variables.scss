@@ -1,5 +1,5 @@
 // colors
-$brand: #007bff;
+$primary: #2CBCFF;
 $white: white;
 $black: black;
 
@@ -7,9 +7,11 @@ $black: black;
 $tablet: 1024px;
 $mobile: 768px;
 
+// fonts
 $sans: "Alegreya Sans", sans-serif;
 $serif: "Alegreya", serif;
 
+// elements
 .container {
   max-width: 1060px;
   padding-right: 20px;

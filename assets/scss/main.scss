@@ -2,3 +2,17 @@
 @import "settings/mixins";
 @import "settings/fonts";
 @import "settings/variables";
+
+
+// example how to use media mixin for responsive
+body {
+  background-color: teal;
+
+  @include media($tablet){
+    background-color: tomato;
+  }
+
+  @include media($mobile){
+    background-color: white;
+  }
+}

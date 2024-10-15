@@ -1,5 +1,7 @@
 ### Install project
 
+Use node version `>14`
+
 `npm install`
 
 ### Run project
