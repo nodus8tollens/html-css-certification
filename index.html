@@ -2,14 +2,102 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Levelup blog</title>
-  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="dist/styles.css" />
 </head>
 
 <body>
-  <h1>Hello world!</h1>
+  <header class="header">
+    <div class="container--header">
+      <a href="/" class="header__logo">Academy<span>Blog</span></a>
+      <!-- add ".nav--active" modifier to trigger mobile nav -->
+      <nav class="nav nav--active">
+        <ul class="nav__list">
+          <li><a href="articles.html" class="nav__link">Articles</a></li>
+          <li><a href="premium.html" class="nav__link">Premium</a></li>
+          <li><a href="myprofile.html" class="nav__link">Sign in</a></li>
+        </ul>
+        <div class="nav__toggle">
+          <img class="nav__open" src="/assets/images/menu-icon.svg" alt="Menu icon" />
+          <img class="nav__close" src="/assets/images/close-icon.svg" alt="Menu icon" />
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <article class="container--hero">
+        <h1>Lorem ipsum dolor <span>sit amet</span></h1>
+        <div class="divider"></div>
+        <p>
+          Donec non massa auctor, dictum ante eu, ultrices eros. Sed sit amet augue nec diam tempor placerat. Integer
+          dignissim lacinia turpis.
+        </p>
+      </article>
+    </section>
+
+    <section class="featuredNews">
+      <div class="container--featuredNews">
+        <div class="featuredNews__heading">
+          <h2>Featured news</h2>
+          <a href="#">All featured news -></a>
+        </div>
+        <div class="featuredCardsList">
+          <a href="" class="featuredCard">
+            <img class="featuredCard__image" src="https://picsum.photos/500/380" />
+            <div class="featuredCard__overlay"></div>
+            <div class="featuredCard__content">
+              <div class="premiumFlag--featuredCard">
+                <img class="" src="/assets/images/premium-icon.svg" />
+              </div>
+              <div class="tag--featuredCard">Design</div>
+              <!-- Use this as component in featuredArticleCard and articleCard - name - "cardContent"  -->
+              <div class="cardContent--featuredCard">
+                <p class="cardContent__date">May, 4 2024</p>
+                <h3 class="cardContent__title">Lorem ipsum dolor sit</h3>
+                <p class="cardContent__author">By: Author Name</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="featuredCard">
+            <img class="featuredCard__image" src="https://picsum.photos/500/381" />
+            <div class="featuredCard__overlay"></div>
+            <div class="featuredCard__content">
+              <div class="premiumFlag--featuredCard">
+                <img class="" src="/assets/images/premium-icon.svg" />
+              </div>
+              <div class="tag--featuredCard">Design</div>
+              <!-- Use this as component in featuredArticleCard and articleCard - name - "cardContent"  -->
+              <div class="cardContent--featuredCard">
+                <p class="cardContent__date">May, 4 2024</p>
+                <h3 class="cardContent__title">Lorem ipsum dolor sit</h3>
+                <p class="cardContent__author">By: Author Name</p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="featuredCard">
+            <img class="featuredCard__image" src="https://picsum.photos/500/382" />
+            <div class="featuredCard__overlay"></div>
+            <div class="featuredCard__content">
+              <div class="premiumFlag--featuredCard">
+                <img class="" src="/assets/images/premium-icon.svg" />
+              </div>
+              <div class="tag--featuredCard">Design</div>
+              <!-- Use this as component in featuredArticleCard and articleCard - name - "cardContent"  -->
+              <div class="cardContent--featuredCard">
+                <p class="cardContent__date">May, 4 2024</p>
+                <h3 class="cardContent__title">Lorem ipsum dolor sit</h3>
+                <p class="cardContent__author">By: Author Name</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

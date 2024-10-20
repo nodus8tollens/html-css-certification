@@ -2,17 +2,16 @@
 @import "settings/mixins";
 @import "settings/fonts";
 @import "settings/variables";
+@import "settings/elements";
+
+// components
+@import "components/header";
+@import "components/featuredCard";
+@import "components/cardContent";
+@import "components/tag";
+@import "components/buttons";
 
 
-// example how to use media mixin for responsive
-body {
-  background-color: teal;
+// pages
+@import "pages/homepage";
 
-  @include media($tablet){
-    background-color: tomato;
-  }
-
-  @include media($mobile){
-    background-color: white;
-  }
-}
