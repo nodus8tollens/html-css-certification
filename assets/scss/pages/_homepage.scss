@@ -13,12 +13,13 @@
   text-align: center;
   gap: 24px;
 
-  @include media($mobile){
+  @include media($mobile) {
     gap: 12px;
     min-height: 260px;
   }
 
-  h1, p {
+  h1,
+  p {
     max-width: 620px;
   }
 
@@ -26,7 +27,7 @@
     max-width: 600px;
     font-size: 48px;
 
-    @include media($mobile){
+    @include media($mobile) {
       font-size: 30px;
     }
 
@@ -38,7 +39,7 @@
   p {
     font-size: 20px;
 
-    @include media($mobile){
+    @include media($mobile) {
       font-size: 16px;
     }
   }
@@ -46,19 +47,34 @@
 
 .featuredNews {
   padding: 26px 0 60px;
-  border-bottom: 1px solid $darkBorder;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+  //height: 100vh;
 }
 
 .container--featuredNews {
   @extend .container;
+  width: 100%;
+  margin: 0;
+  flex-grow: 1;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .featuredNews__heading {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 70px;
+  margin-top: 40px;
 
-  @include media($mobile){
+  @include media($mobile) {
     flex-direction: column;
     gap: 6px;
     align-items: flex-start;
@@ -67,7 +83,7 @@
   h2 {
     font-size: 36px;
 
-    @include media($mobile){
+    @include media($mobile) {
       font-size: 28px;
     }
   }
@@ -85,20 +101,133 @@
 
 .featuredCardsList {
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
 
-  .featuredCard:first-child {
-    grid-row: span 2 / span 2;
-  }
-  
-  .featuredCard:last-child {
-    grid-column-start: 2;
-  }
-
-  @include media($mobile){
+  @include media($mobile) {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.scroll-button {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #d2a679; /* Border color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  &:hover {
+    background-color: #33333343; /* Darker background on hover */
+    //color: #d2a679; /* Change text color on hover */
+  }
+}
+
+.article-categories {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  gap: 20px;
+}
+
+.article-categories__link {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: $serif;
+  transition: 300ms;
+
+  @include media($mobile) {
+    transform: translate(40px);
+    display: inline-block;
+    opacity: 0;
+  }
+
+  &:hover {
+    color: #d4a373;
+  }
+}
+
+.sign-in-section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.sign-in-section__header {
+  text-align: center;
+}
+
+.sign-in-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Two equal columns
+  grid-template-rows: repeat(3, 1fr); // Three equal rows
+  gap: 20px; // Space between grid cells
+  //max-width: 800px;
+  width: 100vw;
+  margin: 0 auto;
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-bottom: 5px;
+    }
+    input,
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+
+  .form-input#content {
+    grid-column: span 2;
+    height: 100%; // Full height of the grid cell
+  }
+
+  .form-checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-button {
+    grid-column: span 2;
+    padding: 10px 20px;
+    background-color: #d2a679;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; // Full width of the grid cell
+    height: 100%; // Full height of the grid cell
+
+    &:hover {
+      background-color: #b5895a;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    .form-input#content,
+    .submit-button {
+      grid-column: span 1;
+    }
   }
 }
