@@ -17,7 +17,7 @@
             <li><a href="articles.html" class="nav__link">Articles</a></li>
             <li><a href="myprofile.html" class="nav__link">Sign in</a></li>
           </ul>
-          <div class="nav__toggle">
+          <!-- <div class="nav__toggle">
             <img
               class="nav__open"
               src="/assets/images/menu-icon.svg"
@@ -28,7 +28,7 @@
               src="/assets/images/close-icon.svg"
               alt="Menu icon"
             />
-          </div>
+          </div> -->
         </nav>
       </div>
     </header>
@@ -43,11 +43,16 @@
             topics. Whether you're looking for the latest trends, expert tips,
             or simply a bit of inspiration to brighten your day!
           </p>
-          <button class="scroll-button">Scroll to articles</button>
+          <button
+            class="scroll-button"
+            onClick="document.getElementById('articles').scrollIntoView();"
+          >
+            Scroll to articles
+          </button>
         </article>
       </section>
 
-      <section class="featuredNews">
+      <section class="featuredNews" id="articles">
         <div class="container--featuredNews">
           <div class="featuredNews__heading">
             <h2>Latest articles</h2>
@@ -166,11 +171,11 @@
               <textarea id="content" rows="5" cols="18">Message</textarea>
             </div>
             <div class="form-checkboxes">
-              <div>
+              <div class="form-checkbox-group">
                 <input type="checkbox" id="consent1" />
                 <label for="consent1">Consent one</label>
               </div>
-              <div>
+              <div class="form-checkbox-group">
                 <input type="checkbox" id="consent2" checked />
                 <label for="consent2">Consent two (pre-checked)</label>
               </div>
@@ -180,5 +185,34 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-publisher">
+          <h3>Contact the publisher</h3>
+          <p>example@email.com</p>
+          <p>+944 450 904 505</p>
+        </div>
+        <div class="footer-top-explore">
+          <h3>Explore</h3>
+          <p>About</p>
+          <p>Partners</p>
+          <p>Job Opportunities</p>
+          <p>Advertise</p>
+          <p>Membership</p>
+        </div>
+        <div class="footer-top-headquarters">
+          <h3>Headquarters</h3>
+          <p>1999 Middleville, NY 1001, New York USA</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-logo">
+          <h4>2024 | Travel Blog</h4>
+        </div>
+        <div class="footer-bottom-subscribe">
+          <p>Subscribe Now</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
