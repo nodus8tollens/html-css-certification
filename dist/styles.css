@@ -429,7 +429,7 @@ ul {
   text-decoration-skip-ink: none;
 }
 .scroll-button:hover {
-  background-color: rgba(51, 51, 51, 0.262745098); /* Darker background on hover */
+  background-color: rgba(51, 51, 51, 0.262745098);
 }
 
 .article-categories {
