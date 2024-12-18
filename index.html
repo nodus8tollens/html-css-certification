@@ -1,103 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Levelup blog</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Levelup blog</title>
-  <link rel="stylesheet" href="dist/styles.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="container--header">
+        <a href="/" class="header__logo">Travel<span>Blog</span></a>
+        <!-- add ".nav--active" modifier to trigger mobile nav -->
+        <nav class="nav nav--active">
+          <ul class="nav__list">
+            <li><a href="articles.html" class="nav__link">Articles</a></li>
+            <li><a href="myprofile.html" class="nav__link">Sign in</a></li>
+          </ul>
+          <!-- <div class="nav__toggle">
+            <img
+              class="nav__open"
+              src="/assets/images/menu-icon.svg"
+              alt="Menu icon"
+            />
+            <img
+              class="nav__close"
+              src="/assets/images/close-icon.svg"
+              alt="Menu icon"
+            />
+          </div> -->
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <header class="header">
-    <div class="container--header">
-      <a href="/" class="header__logo">Academy<span>Blog</span></a>
-      <!-- add ".nav--active" modifier to trigger mobile nav -->
-      <nav class="nav nav--active">
-        <ul class="nav__list">
-          <li><a href="articles.html" class="nav__link">Articles</a></li>
-          <li><a href="premium.html" class="nav__link">Premium</a></li>
-          <li><a href="myprofile.html" class="nav__link">Sign in</a></li>
-        </ul>
-        <div class="nav__toggle">
-          <img class="nav__open" src="/assets/images/menu-icon.svg" alt="Menu icon" />
-          <img class="nav__close" src="/assets/images/close-icon.svg" alt="Menu icon" />
+    <main>
+      <section class="hero">
+        <article class="container--hero">
+          <h1>Welcome to Travel Blog: Insights, Inspiration, and More!</h1>
+          <div class="divider"></div>
+          <p>
+            Insights, inspiration, and practical advice on a wide range of
+            topics. Whether you're looking for the latest trends, expert tips,
+            or simply a bit of inspiration to brighten your day!
+          </p>
+          <button
+            class="scroll-button"
+            onClick="document.getElementById('articles').scrollIntoView();"
+          >
+            Scroll to articles
+          </button>
+        </article>
+      </section>
+
+      <section class="featuredNews" id="articles">
+        <div class="container--featuredNews">
+          <div class="featuredNews__heading">
+            <h2>Latest articles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="article-categories">
+            <a class="article-categories__link" href="#">All</a>
+            <a class="article-categories__link" href="#">Adventure</a>
+            <a class="article-categories__link" href="#">Travel</a>
+            <a class="article-categories__link" href="#">Fashion</a>
+            <a class="article-categories__link" href="#">Technology</a>
+            <a class="article-categories__link" href="#">Branding</a>
+          </div>
+          <div class="featuredCardsList">
+            <a href="" class="featuredCard">
+              <img
+                class="featuredCard__image"
+                src="https://picsum.photos/500/380"
+              />
+              <div class="featuredCard__overlay"></div>
+              <div class="featuredCard__content">
+                <div class="cardContent--featuredCard">
+                  <p class="cardContent__date">08.08.2021</p>
+                  <h3 class="cardContent__title">
+                    Lorem ispum dolor sit amet ipsum dolor ipsum
+                  </h3>
+                  <p class="cardContent__content">
+                    Why do programmers prefer dark mode? Because light attracts
+                    bugs! Lorem ipsum dolor sit amet hue hue
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="featuredCard">
+              <img
+                class="featuredCard__image"
+                src="https://picsum.photos/500/380"
+              />
+              <div class="featuredCard__overlay"></div>
+              <div class="featuredCard__content">
+                <div class="cardContent--featuredCard">
+                  <p class="cardContent__date">08.08.2021</p>
+                  <h3 class="cardContent__title">
+                    Lorem ispum dolor sit amet ipsum dolor ipsum
+                  </h3>
+                  <p class="cardContent__content">
+                    Why do programmers prefer dark mode? Because light attracts
+                    bugs! Lorem ipsum dolor sit amet hue hue
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="featuredCard">
+              <img
+                class="featuredCard__image"
+                src="https://picsum.photos/500/380"
+              />
+              <div class="featuredCard__overlay"></div>
+              <div class="featuredCard__content">
+                <div class="cardContent--featuredCard">
+                  <p class="cardContent__date">08.08.2021</p>
+                  <h3 class="cardContent__title">
+                    Lorem ispum dolor sit amet ipsum dolor ipsum
+                  </h3>
+                  <p class="cardContent__content">
+                    Why do programmers prefer dark mode? Because light attracts
+                    bugs! Lorem ipsum dolor sit amet hue hue
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="featuredCard">
+              <img
+                class="featuredCard__image"
+                src="https://picsum.photos/500/380"
+              />
+              <div class="featuredCard__overlay"></div>
+              <div class="featuredCard__content">
+                <div class="cardContent--featuredCard">
+                  <p class="cardContent__date">08.08.2021</p>
+                  <h3 class="cardContent__title">
+                    Lorem ispum dolor sit amet ipsum dolor ipsum
+                  </h3>
+                  <p class="cardContent__content">
+                    Why do programmers prefer dark mode? Because light attracts
+                    bugs! Lorem ipsum dolor sit amet hue hue
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <article class="container--hero">
-        <h1>Lorem ipsum dolor <span>sit amet</span></h1>
-        <div class="divider"></div>
-        <p>
-          Donec non massa auctor, dictum ante eu, ultrices eros. Sed sit amet augue nec diam tempor placerat. Integer
-          dignissim lacinia turpis.
-        </p>
-      </article>
-    </section>
-
-    <section class="featuredNews">
-      <div class="container--featuredNews">
-        <div class="featuredNews__heading">
-          <h2>Featured news</h2>
-          <a href="#">All featured news -></a>
+      </section>
+      <section class="sign-in-section">
+        <div class="container--sign-in-section">
+          <h2 class="sign-in-section__header">Sign in form</h2>
+          <form class="sign-in-form" action="/">
+            <div class="form-input">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Your name" id="name" />
+            </div>
+            <div class="form-input">
+              <label for="surname">Surname</label>
+              <input type="text" placeholder="Your surname" id="surname" />
+            </div>
+            <div class="form-input">
+              <label for="email">E-mail</label>
+              <input type="email" placeholder="example@email.com" id="email" />
+            </div>
+            <div class="form-input">
+              <label for="password">Password</label>
+              <input type="password" placeholder="********" id="password" />
+            </div>
+            <div class="form-input">
+              <label for="content">Content</label>
+              <textarea id="content" rows="5" cols="18">Message</textarea>
+            </div>
+            <div class="form-checkboxes">
+              <div class="form-checkbox-group">
+                <input type="checkbox" id="consent1" />
+                <label for="consent1">Consent one</label>
+              </div>
+              <div class="form-checkbox-group">
+                <input type="checkbox" id="consent2" checked />
+                <label for="consent2">Consent two (pre-checked)</label>
+              </div>
+              <button type="submit" class="submit-button">Submit</button>
+            </div>
+          </form>
         </div>
-        <div class="featuredCardsList">
-          <a href="" class="featuredCard">
-            <img class="featuredCard__image" src="https://picsum.photos/500/380" />
-            <div class="featuredCard__overlay"></div>
-            <div class="featuredCard__content">
-              <div class="premiumFlag--featuredCard">
-                <img class="" src="/assets/images/premium-icon.svg" />
-              </div>
-              <div class="tag--featuredCard">Design</div>
-              <!-- Use this as component in featuredArticleCard and articleCard - name - "cardContent"  -->
-              <div class="cardContent--featuredCard">
-                <p class="cardContent__date">May, 4 2024</p>
-                <h3 class="cardContent__title">Lorem ipsum dolor sit</h3>
-                <p class="cardContent__author">By: Author Name</p>
-              </div>
-            </div>
-          </a>
-          <a href="" class="featuredCard">
-            <img class="featuredCard__image" src="https://picsum.photos/500/381" />
-            <div class="featuredCard__overlay"></div>
-            <div class="featuredCard__content">
-              <div class="premiumFlag--featuredCard">
-                <img class="" src="/assets/images/premium-icon.svg" />
-              </div>
-              <div class="tag--featuredCard">Design</div>
-              <!-- Use this as component in featuredArticleCard and articleCard - name - "cardContent"  -->
-              <div class="cardContent--featuredCard">
-                <p class="cardContent__date">May, 4 2024</p>
-                <h3 class="cardContent__title">Lorem ipsum dolor sit</h3>
-                <p class="cardContent__author">By: Author Name</p>
-              </div>
-            </div>
-          </a>
-          <a href="" class="featuredCard">
-            <img class="featuredCard__image" src="https://picsum.photos/500/382" />
-            <div class="featuredCard__overlay"></div>
-            <div class="featuredCard__content">
-              <div class="premiumFlag--featuredCard">
-                <img class="" src="/assets/images/premium-icon.svg" />
-              </div>
-              <div class="tag--featuredCard">Design</div>
-              <!-- Use this as component in featuredArticleCard and articleCard - name - "cardContent"  -->
-              <div class="cardContent--featuredCard">
-                <p class="cardContent__date">May, 4 2024</p>
-                <h3 class="cardContent__title">Lorem ipsum dolor sit</h3>
-                <p class="cardContent__author">By: Author Name</p>
-              </div>
-            </div>
-          </a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-publisher">
+          <h3>Contact the publisher</h3>
+          <p>example@email.com</p>
+          <p>+944 450 904 505</p>
+        </div>
+        <div class="footer-top-explore">
+          <h3>Explore</h3>
+          <p>About</p>
+          <p>Partners</p>
+          <p>Job Opportunities</p>
+          <p>Advertise</p>
+          <p>Membership</p>
+        </div>
+        <div class="footer-top-headquarters">
+          <h3>Headquarters</h3>
+          <p>1999 Middleville, NY 1001, New York USA</p>
         </div>
       </div>
-    </section>
-  </main>
-</body>
-
+      <div class="footer-bottom">
+        <div class="footer-bottom-logo">
+          <h4>2024 | Travel Blog</h4>
+        </div>
+        <div class="footer-bottom-subscribe">
+          <a class="nav__link" href="#">Subscribe Now</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

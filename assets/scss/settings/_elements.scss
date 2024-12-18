@@ -1,28 +1,41 @@
 body {
   font-family: $sans;
-  background-color: $dark;
-  color: white;
+  background-color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $serif;
 }
 
-main {
-  margin-top: 68px;
+input,
+label {
+  display: block;
+}
 
-  @include media($mobile){
-    margin-top: 58px;
+main {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+
+  @include media($mobile) {
   }
 }
 
 a {
   text-decoration: none;
+  all: unset;
 }
 
-ul, ol {
+ul,
+ol {
   padding: 0;
   margin: 0;
 }
@@ -32,12 +45,12 @@ ul {
 }
 
 .container {
-  max-width: 1060px;
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 100%;
   margin: auto;
+  justify-content: center;
+  align-items: center;
 
-  @include media($mobile){
+  @include media($mobile) {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -51,7 +64,7 @@ ul {
 .divider {
   width: 180px;
   height: 1px;
-  background-color: $primary;
+  background-color: white;
 }
 
 .premiumFlag {

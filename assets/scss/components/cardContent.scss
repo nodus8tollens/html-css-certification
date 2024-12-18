@@ -5,29 +5,31 @@
 .cardContent--featuredCard {
   @extend .cardContent;
   position: relative;
-  padding: 50px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  @include media($mobile){
+  @include media($mobile) {
     padding: 70px 20px 20px;
   }
 }
 
-.cardContent__date, .cardContent__author {
-  color: #d5d5d5;
+.cardContent__date,
+.cardContent__content {
+  color: black;
 }
 
 .cardContent__title {
   font-family: $serif;
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: black;
   transition: 300ms;
   line-height: 1;
   margin: 4px 0;
 
-  @include media($mobile){
+  @include media($mobile) {
     font-size: 22px;
   }
 }
-
-
