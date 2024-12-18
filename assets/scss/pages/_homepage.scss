@@ -171,6 +171,7 @@
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
+  min-height: 100vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -187,6 +188,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  width: 100%;
   gap: 10px;
   align-items: center;
   padding: 20px 20px 20px 20px;
@@ -194,7 +196,7 @@
   margin: 0 auto;
 
   @include media($mobile) {
-    height: 80vh;
+    //height: 80vh;
   }
 
   label {
@@ -238,6 +240,10 @@
     input {
       margin-right: 5px;
     }
+
+    @include media($mobile) {
+      margin-bottom: 10px;
+    }
   }
 
   .submit-button {
@@ -251,13 +257,14 @@
     cursor: pointer;
     transition: background-color 0.3s;
     width: 40%;
-    height: 30%;
+    height: auto;
 
     &:hover {
       background-color: #b5895a;
     }
 
     @include media($mobile) {
+      margin-top: 10px;
       width: 100%;
     }
   }
