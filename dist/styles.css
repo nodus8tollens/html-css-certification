@@ -97,7 +97,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100vw;
-  padding: 20px 20px;
+  padding: 20px 60px 20px 60px;
   background-color: rgba(0, 0, 0, 0.5); /* Ensure the color is set correctly */
   z-index: 100;
   backdrop-filter: blur(5px);
@@ -126,7 +126,6 @@ ul {
   align-items: center;
   list-style: none;
   gap: 30px;
-  padding: 0 30px;
 }
 
 .nav__link {
@@ -346,13 +345,12 @@ ul {
 }
 
 .featuredNews {
-  padding: 26px 0 60px;
+  padding: 20px 60px 60px 60px;
   background-color: white;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 20px;
 }
 
 .container--featuredNews {
@@ -400,6 +398,7 @@ ul {
 
 .featuredCardsList {
   margin-top: 30px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -460,7 +459,7 @@ ul {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  min-height: 100vh;
+  max-height: 573px;
   width: 100vw;
   justify-content: center;
   align-items: center;
