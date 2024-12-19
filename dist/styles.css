@@ -94,8 +94,11 @@ ul {
 }
 
 .header {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100vw;
   padding: 20px 60px 20px 60px;
   background-color: rgba(0, 0, 0, 0.5); /* Ensure the color is set correctly */
@@ -171,12 +174,15 @@ ul {
   width: 350px;
   overflow: hidden;
   display: flex;
+  align-self: center;
   flex-direction: column;
   background-color: #efefef;
 }
 @media (max-width: 768px) {
   .featuredCard {
     min-height: auto;
+    align-self: center;
+    justify-self: center;
   }
 }
 .featuredCard:hover .featuredCard__image {
@@ -352,6 +358,11 @@ ul {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .featuredNews {
+    padding: 20px 20px 60px 20px;
+  }
+}
 
 .container--featuredNews {
   width: 100%;
@@ -408,6 +419,7 @@ ul {
   .featuredCardsList {
     display: flex;
     flex-direction: column;
+    min-width: 80%;
   }
 }
 
@@ -467,39 +479,70 @@ ul {
   background-color: #efefef;
   padding: 20px 20px 20px 20px;
 }
+@media (max-width: 768px) {
+  .sign-in-section {
+    min-height: 100vh;
+  }
+}
 
 .sign-in-section__header {
   text-align: center;
+  padding: 60px 0;
+}
+@media (max-width: 768px) {
+  .sign-in-section__header {
+    padding: 20px 0;
+  }
 }
 
 .sign-in-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   width: 100%;
-  gap: 10px;
+  height: 100%;
+  gap: 40px;
   align-items: center;
   padding: 20px 20px 20px 20px;
   width: 100vw;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .sign-in-form {
+    height: 819px;
+    min-height: 819px;
+  }
+}
 .sign-in-form label {
   font-weight: bold;
+}
+.sign-in-form .left {
+  justify-self: end;
+}
+.sign-in-form .right {
+  justify-self: start;
 }
 .sign-in-form .form-input {
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  width: 40vw;
+  width: 100%;
+  max-width: 477px;
 }
 .sign-in-form .form-input label {
   margin-bottom: 5px;
 }
 .sign-in-form .form-input input,
 .sign-in-form .form-input textarea {
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+@media (max-width: 768px) {
+  .sign-in-form .form-input {
+    justify-self: center;
+    width: 100%;
+  }
 }
 .sign-in-form .form-input#content {
   grid-column: span 2;
@@ -508,11 +551,16 @@ ul {
 .sign-in-form .form-checkboxes {
   display: flex;
   flex-direction: column;
-  justify-self: center;
   height: 100%;
-  width: 40vw;
+  width: 100%;
+  max-width: 477px;
   justify-content: space-between;
   padding-top: 20px;
+}
+@media (max-width: 768px) {
+  .sign-in-form .form-checkboxes {
+    justify-self: center;
+  }
 }
 .sign-in-form .form-checkbox-group {
   display: flex;
@@ -531,11 +579,11 @@ ul {
   background-color: #d2a679;
   color: white;
   border: none;
-  border-radius: 4px;
-  width: 20vw;
+  border-radius: 1px;
+  font-weight: bold;
+  width: 320px;
   cursor: pointer;
   transition: background-color 0.3s;
-  width: 40%;
   height: auto;
 }
 .sign-in-form .submit-button:hover {
@@ -603,7 +651,7 @@ footer {
   }
 }
 .footer-bottom div {
-  margin: 0 5vw;
+  padding: 0 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */

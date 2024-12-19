@@ -1,6 +1,9 @@
 .header {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100vw;
   padding: 20px 60px 20px 60px;
   background-color: rgba(0, 0, 0, 0.5); /* Ensure the color is set correctly */

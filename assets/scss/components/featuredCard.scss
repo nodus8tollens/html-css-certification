@@ -3,11 +3,14 @@
   width: 350px;
   overflow: hidden;
   display: flex;
+  align-self: center;
   flex-direction: column;
   background-color: #efefef;
 
   @include media($mobile) {
     min-height: auto;
+    align-self: center;
+    justify-self: center;
   }
 
   &:hover {
