@@ -1,6 +1,7 @@
 .featuredCard {
   position: relative;
-  width: 350px;
+  max-width: 350px;
+  max-height: 475px;
   overflow: hidden;
   display: flex;
   align-self: center;

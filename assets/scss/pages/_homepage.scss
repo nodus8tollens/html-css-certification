@@ -118,7 +118,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
   justify-content: space-between;
 
   @include media($mobile) {
@@ -197,6 +197,7 @@
 .sign-in-section__header {
   text-align: center;
   padding: 60px 0;
+  font-size: 36px;
 
   @include media($mobile) {
     padding: 20px 0;

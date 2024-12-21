@@ -183,7 +183,8 @@ ul {
 
 .featuredCard {
   position: relative;
-  width: 350px;
+  max-width: 350px;
+  max-height: 475px;
   overflow: hidden;
   display: flex;
   align-self: center;
@@ -425,7 +426,7 @@ ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
@@ -504,6 +505,7 @@ ul {
 .sign-in-section__header {
   text-align: center;
   padding: 60px 0;
+  font-size: 36px;
 }
 @media (max-width: 768px) {
   .sign-in-section__header {
